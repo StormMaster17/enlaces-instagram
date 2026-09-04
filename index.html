@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html>
-
-    
 <head>
     <title>Redireccionando...</title>
     <script>
         // Configuración de números y mensajes
         var v1 = "https://wa.me/584222842013?text=Hola,%20vengo%20de%20Instagram%20y%20quiero%20un%20presupuesto%20(L1)";
-        var v2 = "https://wa.me/584246143551?text=Hola,%20vengo%20de%20Instagram%20y%20quiero%20un%20presupuesto%20(L2)";
-        var v3 = "https://wa.me/584120132842?text=Hola,%20vengo%20de%20Instagram%20y%20quiero%20un%20presupuesto%20(L3)";
+        var v2 = "https://wa.me/584120132842?text=Hola,%20vengo%20de%20Instagram%20y%20quiero%20un%20presupuesto%20(L2)";
 
         // Generamos un número al azar entre 1 y 100
         var azar = Math.floor(Math.random() * 100) + 1;
         var destino = "";
 
-        if (azar <= 50) {
-            // El 40% de los clics van al primer número
+        if (azar <= 40) {
+            // Del 1 al 40 (40% de los clics)
             destino = v1;
-        } else if (azar <= 90) {
-            // Del 61 al 80 (un 20%) van al segundo número
-            destino = v2;
         } else {
-            // Del 81 al 100 (el otro 20%) van al tercer número
-            destino = v3;
+            // Del 41 al 100 (60% de los clics)
+            destino = v2;
         }
 
         // Redirección inmediata
